@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "money-flow-x"
+version = "0.1.0"
+description = "Aplicacion web personal para analizar movimientos financieros y salud financiera."
+authors = ["Carlos <carlos@example.com>"]
+readme = "README.md"
+packages = [{ include = "money_flow_x", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+pandas = ">=2.2"
+pdfplumber = ">=0.11"
+plotly = ">=5.20"
+python-dotenv = ">=1.0"
+python-telegram-bot = ">=20.0"
+streamlit = ">=1.35"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.0"
+ruff = ">=0.6"
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
