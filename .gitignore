@@ -30,5 +30,10 @@ data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# Streamlit
-.streamlit/secrets.toml
+# Node / Frontend
+node_modules/
+.next/
+out/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
