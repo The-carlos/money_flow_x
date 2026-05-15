@@ -3,17 +3,17 @@ name = "money-flow-x"
 version = "0.1.0"
 description = "Aplicacion web personal para analizar movimientos financieros y salud financiera."
 authors = ["Carlos <carlos@example.com>"]
-readme = "README.md"
+readme = "../README.md"
 packages = [{ include = "money_flow_x", from = "src" }]
 
 [tool.poetry.dependencies]
 python = ">=3.11,<4.0"
+fastapi = ">=0.115"
+uvicorn = {version = ">=0.30", extras = ["standard"]}
 pandas = ">=2.2"
 pdfplumber = ">=0.11"
-plotly = ">=5.20"
 python-dotenv = ">=1.0"
 python-telegram-bot = ">=20.0"
-streamlit = ">=1.35"
 
 [tool.poetry.group.dev.dependencies]
 pytest = ">=8.0"
